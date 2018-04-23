@@ -15,4 +15,4 @@ for i in range(0,10):
     red=randint(0,n)
     green=n-red
     print(red,green)
-    if 
+    total+=20
