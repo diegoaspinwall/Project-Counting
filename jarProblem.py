@@ -34,4 +34,4 @@ for i in range(0,10000):
     picktotal+=color
 
 pickprob=picktotal/total
-print('Prob of pick',pickprob)
+print('Prob of picked color',pickprob)
