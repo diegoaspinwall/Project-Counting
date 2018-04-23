@@ -4,10 +4,10 @@
 
 from random import randint
 
-#Strat1
-
 w=10
 n=20
+
+#Strat1
 
 total=0
 redtotal=0
