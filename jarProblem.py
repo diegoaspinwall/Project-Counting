@@ -20,7 +20,7 @@ for i in range(0,10000):
 redprob=redtotal/total
 print('Prob of red',redprob)
 print('Prob of green',1-redprob)
-print('D =', redprob*(-10))
+print('D =', redprob*(-1)*w)
 
 '''
 
