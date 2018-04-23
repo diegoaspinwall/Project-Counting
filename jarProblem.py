@@ -19,4 +19,5 @@ for i in range(0,10000):
 
 redprob=redtotal/total
 print(redprob)
+print(1-redprob)
 
