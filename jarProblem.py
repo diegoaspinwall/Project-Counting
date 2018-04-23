@@ -12,12 +12,11 @@ n=20
 total=0
 redtotal=0
 
-for i in range(0,500):
+for i in range(0,2000):
     red=randint(0,n)
     total+=20
     redtotal+=red
 
 redprob=redtotal/total
 print(redprob)
-
 
