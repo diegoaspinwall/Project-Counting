@@ -7,8 +7,8 @@ from random import randint
 w=10
 n=20
 
-#Strat1+2
-
+#Strat1/2- Always red/green
+'''
 total=0
 redtotal=0
 
@@ -32,4 +32,3 @@ for i in range(0,10000):
     red=randint(0,n)
     total+=20
     redtotal+=red
-'''
