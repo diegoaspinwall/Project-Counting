@@ -14,7 +14,7 @@ redtotal=0
 
 for i in range(0,10000):
     red=randint(0,n)
-    total+=20
+    total+=n
     redtotal+=red
 
 redprob=redtotal/total
@@ -30,7 +30,7 @@ picktotal=0
 
 for i in range(0,10000):
     color=randint(0,n-1)+1
-    total+=20
+    total+=n
     picktotal+=color
 
 pickprob=picktotal/total
