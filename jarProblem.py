@@ -19,4 +19,4 @@ for i in range(0,10):
     total+=20
     redtotal+=red
 
-d=redtotal/total
+print(redtotal/total)
