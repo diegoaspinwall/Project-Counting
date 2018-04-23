@@ -29,6 +29,6 @@ total=0
 picktotal=0
 
 for i in range(0,10000):
-    red=randint(0,n)
+    red=randint(0,n-1)+1
     total+=20
     redtotal+=red
