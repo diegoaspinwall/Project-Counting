@@ -7,8 +7,8 @@ from random import randint
 w=10
 n=20
 
-#Strat1
-
+#Strat1+2
+'''
 total=0
 redtotal=0
 
@@ -20,4 +20,6 @@ for i in range(0,10000):
 redprob=redtotal/total
 print(redprob)
 print(1-redprob)
+'''
+
 
