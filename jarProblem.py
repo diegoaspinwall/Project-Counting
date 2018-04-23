@@ -18,8 +18,8 @@ for i in range(0,10000):
     redtotal+=red
 
 redprob=redtotal/total
-print(redprob)
-print(1-redprob)
+print('Prob of red',redprob)
+print('Prob of green',1-redprob)
 print('D =', redprob*(-10))
 
 '''
