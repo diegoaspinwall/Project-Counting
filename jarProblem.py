@@ -9,7 +9,10 @@ from random import randint
 w=10
 n=20
 
-red=randint(0,20)
-green=20-red
+total=0
 
-print(red,green)
+for i in range(0,10):
+    red=randint(0,20)
+    green=20-red
+    print(red,green)
+    if 
