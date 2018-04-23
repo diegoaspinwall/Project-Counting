@@ -11,3 +11,5 @@ n=20
 
 red=randint(0,20)
 green=20-red
+
+print(red,green)
