@@ -25,5 +25,10 @@ for i in range(0,1):
         count+=1
     if jar[randint(0,n-1)]=='r':
         count+=1
-    print(count)
+    if count==0 or count==2:
+        color=randint(0,n-2)+2
+        picktotal+=color
+    else:
+        print('no')
+
 
