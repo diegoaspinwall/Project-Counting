@@ -7,6 +7,8 @@ from random import randint
 w=10
 n=20
 
+#Strat 3
+
 total=0
 picktotal=0
 
