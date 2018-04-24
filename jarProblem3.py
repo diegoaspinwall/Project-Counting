@@ -26,3 +26,4 @@ for i in range(0,1):
     if jar[randint(0,n)]=='r':
         count+=1
     print(count)
+print(jar[20])
