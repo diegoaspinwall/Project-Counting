@@ -12,9 +12,13 @@ n=20
 total=0
 picktotal=0
 
-for i in range(0,1000):
+for i in range(0,1):
     red=randint(0,n)
     total+=n
     jar=[]
-    for j in range(
+    for j in range(0,red):
+        jar.append('r')
+    for k in range(0,n-red):
+        jar.append('g')
+    print(jar)
     #picktotal+=red
