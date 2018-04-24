@@ -10,14 +10,11 @@ n=20
 #Strat4
 
 total=0
-redtotal=0
+picktotal=0
 
-for i in range(0,10000):
+for i in range(0,1000):
     red=randint(0,n)
     total+=n
-    redtotal+=red
-
-redprob=redtotal/total
-print('Prob of red',redprob)
-print('Prob of green',1-redprob)
-print('D =', redprob*(-1)*w)
+    jar=[]
+    for j in range(
+    #picktotal+=red
