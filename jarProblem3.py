@@ -28,6 +28,7 @@ for i in range(0,1):
     if count==0 or count==2:
         color=randint(0,n-2)+2
         picktotal+=color
+        print('yes')
     else:
         print('no')
 
