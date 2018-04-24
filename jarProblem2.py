@@ -19,5 +19,3 @@ for i in range(0,100000):
 
 pickprob=picktotal/total
 print('Prob of picked color',pickprob)
-
-
