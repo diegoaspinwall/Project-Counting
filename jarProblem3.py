@@ -20,5 +20,9 @@ for i in range(0,1):
         jar.append('r')
     for k in range(0,n-red):
         jar.append('g')
-    print(jar)
-    #picktotal+=red
+    count=0
+    if jar[randint(0,n)]=='r':
+        count+=1
+    if jar[randint(0,n)]=='r':
+        count+=1
+    print(count)
