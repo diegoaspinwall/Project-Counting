@@ -21,9 +21,9 @@ for i in range(0,1):
     for k in range(0,n-red):
         jar.append('g')
     count=0
-    if jar[randint(0,n)]=='r':
+    if jar[randint(0,n-1)]=='r':
         count+=1
-    if jar[randint(0,n)]=='r':
+    if jar[randint(0,n-1)]=='r':
         count+=1
     print(count)
-print(jar[20])
+
