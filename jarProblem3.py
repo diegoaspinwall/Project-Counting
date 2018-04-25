@@ -12,7 +12,7 @@ n=20
 total=0
 picktotal=0
 
-for i in range(0,1):
+for i in range(0,10):
     red=randint(0,n)
     total+=n
     jar=[]
@@ -21,21 +21,21 @@ for i in range(0,1):
     for k in range(0,n-red):
         jar.append('g')
     count=0
-    print(jar)
+    #print(jar)
     for b in range(1,3):
         rando = randint(0,n-b)
         if jar[rando]=='r':
             count+=1
         jar.remove(jar[rando])
-        print(jar)
+        #print(jar)
     if count==0 or count==2:
         color=randint(0,n-2)+2
         picktotal+=color
-        print('two of same color')
+        #print('two of same color')
     else:
         color=randint(0,n-3)+2
         picktotal+=color
-        print('two different, one more')
+        #print('two different, one more')
 
 pickprob=picktotal/total
 print('Prob of picked color',pickprob)
