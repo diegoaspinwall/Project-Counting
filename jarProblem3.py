@@ -25,6 +25,7 @@ for i in range(0,1):
     for b in range(1,3):
         rando = randint(0,n-b)
         if jar[rando]=='r':
+            #no
             count+=1
             jar.remove(jar[rando])
         print(b)
