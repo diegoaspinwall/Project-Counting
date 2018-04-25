@@ -37,3 +37,6 @@ for i in range(0,1):
         picktotal+=color
         print('two different, one more')
 
+pickprob=picktotal/total
+print('Prob of picked color',pickprob)
+
