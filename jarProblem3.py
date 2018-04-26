@@ -58,5 +58,13 @@ for i in range(0,1):
             pick.append('g')
     print(pick)
     if pick[0]==pick[1]:
+        guess=pick[0]
         print('same')
+    else:
+        rando = randint(0,n)
+        if jar[rando]=='r':
+            guess='r'
+        else:
+            guess='g'
+    print(guess)
 
