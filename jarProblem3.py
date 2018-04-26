@@ -69,5 +69,6 @@ for i in range(0,1):
     print(guess)
     if jar[randint(0,n-1)]==guess:
         picktotal+=1
+print(picktotal/total)
     
 
