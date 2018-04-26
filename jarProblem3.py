@@ -57,10 +57,10 @@ for i in range(0,1):
         else:
             pick.append('g')
         jar.remove(jar[rando])
-    print(pick)
+    #print(pick)
     if pick[0]==pick[1]:
         guess=pick[0]
-        print('same')
+        #print('same')
         if jar[randint(0,n-3)]==guess:
             picktotal+=1
     else:
@@ -73,7 +73,7 @@ for i in range(0,1):
             guess='g'
         if jar[randint(0,n-4)]==guess:
             picktotal+=1
-    print(guess)
+    #print(guess)
 
 print(picktotal/total)
 
