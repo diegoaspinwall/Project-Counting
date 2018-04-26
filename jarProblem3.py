@@ -49,6 +49,7 @@ for i in range(0,1):
         jar.append('r')
     for k in range(0,n-red):
         jar.append('g')
+    #print(jar)
     pick=[]
     for b in range(1,3):
         rando = randint(0,n-b)
@@ -74,6 +75,7 @@ for i in range(0,1):
         if jar[randint(0,n-4)]==guess:
             picktotal+=1
     #print(guess)
+    #print(jar)
 
 print(picktotal/total)
 
@@ -112,3 +114,4 @@ for i in range(0,10000):
 print(picktotal/total)
 '''
 
+print('R/S =', (w-5)*(1-(picktotal/total))+(-5)*(picktotal/total))
