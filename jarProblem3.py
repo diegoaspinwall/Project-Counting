@@ -49,6 +49,7 @@ for i in range(0,10000):
         jar.append('r')
     for k in range(0,n-red):
         jar.append('g')
+    unchangedjar=jar
     #print(jar)
     pick=[]
     for b in range(1,3):
@@ -76,6 +77,8 @@ for i in range(0,10000):
             picktotal+=1
     #print(guess)
     #print(jar)
+
+#ALL MARBLE REPLACED BEFORE
 
 print(picktotal/total)
 '''
