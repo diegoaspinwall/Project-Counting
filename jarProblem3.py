@@ -45,11 +45,13 @@ for i in range(0,1000):
     red=randint(0,n)
     total+=1
     jar=[]
+    unchangedjar=[]
     for j in range(0,red):
         jar.append('r')
+        unchangedjar.append('r')
     for k in range(0,n-red):
         jar.append('g')
-    unchangedjar=jar
+        unchangedjar.append('g')
     #print(jar)
     pick=[]
     for b in range(1,3):
