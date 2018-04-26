@@ -57,4 +57,6 @@ for i in range(0,1):
         else:
             pick.append('g')
     print(pick)
+    if pick[0]=pick[1]:
+        print('same')
 
