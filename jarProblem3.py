@@ -51,7 +51,7 @@ for i in range(0,1):
         jar.append('g')
     pick=[]
     for b in range(1,3):
-        rando = randint(0,n)
+        rando = randint(0,n-1)
         if jar[rando]=='r':
             pick.append('r')
         else:
