@@ -11,7 +11,7 @@ n=20
 
 total=0
 picktotal=0
-
+'''
 for i in range(0,10000):
     red=randint(0,n)
     total+=n
@@ -41,7 +41,7 @@ pickprob=picktotal/total
 print('Prob of picked color',pickprob)
 '''
 
-for i in range(0,10000):
+for i in range(0,1):
     red=randint(0,n)
     total+=1
     jar=[]
@@ -50,7 +50,9 @@ for i in range(0,10000):
     for k in range(0,n-red):
         jar.append('g')
     unchangedjar=jar
-    #print(jar)
+    print(jar)
+    print(unchangedjar)
+    '''
     pick=[]
     for b in range(1,3):
         rando = randint(0,n-b)
@@ -81,8 +83,8 @@ for i in range(0,10000):
 #ALL MARBLE REPLACED BEFORE
 
 print(picktotal/total)
-'''
 
+'''
 
 #Strat4
 '''
