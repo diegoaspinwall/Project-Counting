@@ -57,5 +57,4 @@ for i in range(0,1):
         else:
             pick.append('g')
     print(pick)
-        jar.remove(jar[rando])
 
