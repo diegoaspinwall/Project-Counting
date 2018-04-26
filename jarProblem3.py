@@ -49,5 +49,13 @@ for i in range(0,1):
         jar.append('r')
     for k in range(0,n-red):
         jar.append('g')
-    print(jar)
+    pick=[]
+    for b in range(1,3):
+        rando = randint(0,n)
+        if jar[rando]=='r':
+            pick.append('r')
+        else:
+            pick.append('g')
+    print(pick)
+        jar.remove(jar[rando])
 
