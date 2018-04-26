@@ -11,7 +11,7 @@ n=20
 
 total=0
 picktotal=0
-'''
+
 for i in range(0,10000):
     red=randint(0,n)
     total+=n
@@ -84,7 +84,7 @@ for i in range(0,1000):
 
 print(picktotal/total)
 
-
+'''
 
 #Strat4
 '''
