@@ -43,7 +43,7 @@ print('Prob of picked color',pickprob)
 
 for i in range(0,1):
     red=randint(0,n)
-    total+=n
+    total+=1
     jar=[]
     for j in range(0,red):
         jar.append('r')
@@ -61,10 +61,13 @@ for i in range(0,1):
         guess=pick[0]
         print('same')
     else:
-        rando = randint(0,n)
+        rando = randint(0,n-1)
         if jar[rando]=='r':
             guess='r'
         else:
             guess='g'
     print(guess)
+    if jar[randint(0,n-1)]==guess:
+        picktotal+=1
+    
 
