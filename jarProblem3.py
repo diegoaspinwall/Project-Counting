@@ -60,16 +60,21 @@ for i in range(0,1):
     print(pick)
     if pick[0]==pick[1]:
         guess=pick[0]
-        #print('same')
+        print('same')
+        if jar[randint(0,n-3)]==guess:
+            picktotal+=1
     else:
-        rando = randint(0,n-1)
+        rando = randint(0,n-3)
         if jar[rando]=='r':
+            jar.remove(jar[rando])
             guess='r'
         else:
+            jar.remove(jar[rando])
             guess='g'
-    #print(guess)
-    if jar[randint(0,n-1)]==guess:
-        picktotal+=1
+        if jar[randint(0,n-4)]==guess:
+            picktotal+=1
+    print(guess)
+
 print(picktotal/total)
 
 
