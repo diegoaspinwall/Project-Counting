@@ -50,9 +50,7 @@ for i in range(0,1):
     for k in range(0,n-red):
         jar.append('g')
     unchangedjar=jar
-    print(jar)
-    print(unchangedjar)
-    '''
+    #print(jar)
     pick=[]
     for b in range(1,3):
         rando = randint(0,n-b)
@@ -84,7 +82,7 @@ for i in range(0,1):
 
 print(picktotal/total)
 
-'''
+
 
 #Strat4
 '''
