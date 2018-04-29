@@ -43,7 +43,7 @@ for i in range(0,1):
     else:
         rando = randint(0,n-1)
         picks.append(rando)
-        if picks[0]=picks[2]:
+        if picks[0]==picks[2]:
             color=randint(0,n-2)+1
             picktotal+=color
             print('Three picks, 1st and 3rd same')
