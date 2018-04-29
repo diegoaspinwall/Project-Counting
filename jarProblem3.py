@@ -15,7 +15,7 @@ picktotal=0
 #IF THE CHOICES ARE THE SAME, DIFF RANDOGUESSS
 #Strat4
 
-for i in range(0,10000):
+for i in range(0,1):
     red=randint(0,n)
     total+=n
     jar=[]
