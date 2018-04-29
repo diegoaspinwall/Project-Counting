@@ -36,10 +36,11 @@ for i in range(0,1):
         if picks[0]==picks[1]:
             color=randint(0,n-2)+1
             picktotal+=color
+            print('Same one twice')
         else:
             color=randint(0,n-2)+2
             picktotal+=color
-        #print('two of same color')
+            print('two different of same color')
     else:
         color=randint(0,n-3)+2
         picktotal+=color
