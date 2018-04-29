@@ -86,4 +86,5 @@ print(picktotal/total)
 
 '''
 
-
+print('R/S =', (w-5)*(1-(picktotal/total))+(-5)*(picktotal/total))
+#change -5 sometime?
