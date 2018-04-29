@@ -33,8 +33,12 @@ for i in range(0,1):
         picks.append(rando)
         #print(jar)
     if count==0 or count==2:
-        color=randint(0,n-2)+2
-        picktotal+=color
+        if picks[0]==picks[1]:
+            color=randint(0,n-2)+1
+            picktotal+=color
+        else:
+            color=randint(0,n-2)+2
+            picktotal+=color
         #print('two of same color')
     else:
         color=randint(0,n-3)+2
