@@ -31,20 +31,26 @@ for i in range(0,1):
         if jar[rando]=='r':
             count+=1
         picks.append(rando)
-        #print(jar)
     if count==0 or count==2:
         if picks[0]==picks[1]:
             color=randint(0,n-2)+1
             picktotal+=color
-            print('Same one twice')
+            print('Two picks, same one')
         else:
             color=randint(0,n-2)+2
             picktotal+=color
-            print('two different of same color')
+            print('Two picks, different')
     else:
-        color=randint(0,n-3)+2
-        picktotal+=color
-        #print('two different, one more')
+        rando = randint(0,n-1)
+        picks.append(rando)
+        if picks[0]=picks[2]:
+            color=randint(0,n-2)+1
+            picktotal+=color
+            print('Three picks, 1st and 3rd same')
+        else:
+            color=randint(0,n-3)+2
+            picktotal+=color
+            print('Three picks, all different')
 
 pickprob=picktotal/total
 print('Prob of picked color',pickprob)
