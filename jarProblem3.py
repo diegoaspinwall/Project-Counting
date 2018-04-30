@@ -7,7 +7,7 @@ from random import randint
 w=10
 n=20
 
-#Strat5
+#Strat4
 
 total=0
 picktotal=0
