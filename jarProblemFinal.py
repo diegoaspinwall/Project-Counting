@@ -77,5 +77,7 @@ for i in range(0,10000):
 
 twopickprob=twopicktotal/threetotal
 print('Prob of yes color strategy 4 =',twopickprob)
+R= (-1)*(w*twopickprob+D)
+print('R =', R)
 
 
