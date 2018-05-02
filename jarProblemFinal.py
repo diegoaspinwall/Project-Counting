@@ -110,7 +110,7 @@ for i in range(0,2000):
         #print('two different, one more')
 
 threepickprob=threepicktotal/fourtotal
-print('Prob of picked color',threepickprob)
+print('Prob of yes color strategy 5',threepickprob)
 S= (-1)*(w*threepickprob+D)
 print('S =', S)
 
