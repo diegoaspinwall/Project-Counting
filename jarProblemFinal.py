@@ -84,7 +84,7 @@ print('R =', R)
 fourtotal=0
 threepicktotal=0
 
-for i in range(0,10000):
+for i in range(0,2000):
     red=randint(0,n)
     fourtotal+=n
     jar=[]
