@@ -11,7 +11,7 @@ n=20
 onetotal=0
 redtotal=0
 
-for i in range(0,2000):
+for i in range(0,3000):
     red=randint(0,n)
     onetotal+=n
     redtotal+=red
