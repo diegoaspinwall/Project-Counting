@@ -22,3 +22,6 @@ D= oneprob*(-1)*w
 
 print('Probability red/green strategy 1 or 2 =', oneprob)
 print('D =', D)
+
+#Strat3
+
