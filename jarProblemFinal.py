@@ -18,7 +18,6 @@ for i in range(0,2000):
 
 oneprob=redtotal/onetotal
 D= oneprob*(-1)*w
-
 print('Probability red/green strategy 1 or 2 =', oneprob)
 print('D =', D)
 
@@ -33,3 +32,5 @@ for i in range(0,100000):
 
 pickprob=picktotal/twototal
 print('Prob yes color strategy 3 =',pickprob)
+P= (-1)*(w*oneprob+D)
+print('P= ', P)
