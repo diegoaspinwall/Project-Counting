@@ -32,5 +32,5 @@ for i in range(0,100000):
 
 pickprob=picktotal/twototal
 print('Prob yes color strategy 3 =',pickprob)
-P= (-1)*(w*.5+D)#????????
+P= (-1)*(w*pickprob+D)
 print('P = ', P)
