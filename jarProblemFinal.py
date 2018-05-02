@@ -111,7 +111,8 @@ for i in range(0,10000):
 
 threepickprob=threepicktotal/fourtotal
 print('Prob of picked color',threepickprob)
-
+S= (-1)*(w*threepickprob+D)
+print('S =', S)
 
 
 
