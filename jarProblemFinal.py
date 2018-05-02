@@ -6,12 +6,13 @@ from random import randint
 
 w=10
 n=20
+repeated=3000
 
 #Strat1/2
 onetotal=0
 redtotal=0
 
-for i in range(0,3000):
+for i in range(0,repeated):
     red=randint(0,n)
     onetotal+=n
     redtotal+=red
@@ -25,7 +26,7 @@ print('D =', D)
 twototal=0
 picktotal=0
 
-for i in range(0,3000):
+for i in range(0,repeated):
     color=randint(0,n-1)+1
     twototal+=n
     picktotal+=color
@@ -38,7 +39,7 @@ print('P = ', P)
 #Strat4
 threetotal=0
 twopicktotal=0
-for i in range(0,3000):
+for i in range(0,repeated):
     red=randint(0,n)
     threetotal+=n
     jar=[]
@@ -84,7 +85,7 @@ print('R =', R)
 fourtotal=0
 threepicktotal=0
 
-for i in range(0,3000):
+for i in range(0,repeated):
     red=randint(0,n)
     fourtotal+=n
     jar=[]
