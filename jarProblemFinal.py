@@ -18,5 +18,7 @@ for i in range(0,2000):
     redtotal+=red
 
 oneprob=redtotal/onetotal
+D= redprob*(-1)*w
 
 print('Probability red/green strategy 1/2 =', oneprob)
+print('D =', D)
