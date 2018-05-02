@@ -25,7 +25,7 @@ print('D =', D)
 twototal=0
 picktotal=0
 
-for i in range(0,100000):
+for i in range(0,2000):
     color=randint(0,n-1)+1
     twototal+=n
     picktotal+=color
@@ -38,7 +38,7 @@ print('P = ', P)
 #Strat4
 threetotal=0
 twopicktotal=0
-for i in range(0,10000):
+for i in range(0,2000):
     red=randint(0,n)
     threetotal+=n
     jar=[]
