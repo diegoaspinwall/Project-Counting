@@ -20,5 +20,5 @@ for i in range(0,2000):
 oneprob=redtotal/onetotal
 D= oneprob*(-1)*w
 
-print('Probability red/green strategy 1/2 =', oneprob)
+print('Probability red/green strategy 1 or 2 =', oneprob)
 print('D =', D)
