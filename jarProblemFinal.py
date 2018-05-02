@@ -75,5 +75,7 @@ for i in range(0,10000):
             twopicktotal+=color
             #print('Three picks, all different')
 
-pickprob=picktotal/threetotal
-print('Prob of picked color',pickprob)
+twopickprob=twopicktotal/threetotal
+print('Prob of yes color strategy 4 =',twopickprob)
+
+
