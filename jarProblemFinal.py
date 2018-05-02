@@ -7,15 +7,16 @@ from random import randint
 w=10
 n=20
 
-#Strat1/2- Always red/green
+#Strat1/2
 
-total=0
+onetotal=0
 redtotal=0
 
-for i in range(0,10000):
+for i in range(0,2000):
     red=randint(0,n)
-    total+=n
+    onetotal+=n
     redtotal+=red
 
-redprob=redtotal/total
+oneprob=redtotal/onetotal
 
+print('Probability red/green strategy 1/2 =', oneprob)
