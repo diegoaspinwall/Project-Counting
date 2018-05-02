@@ -114,7 +114,3 @@ print('Prob of picked color',threepickprob)
 S= (-1)*(w*threepickprob+D)
 print('S =', S)
 
-
-
-
-
