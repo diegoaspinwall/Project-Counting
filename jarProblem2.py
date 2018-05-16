@@ -33,5 +33,7 @@ for i in range(0,1):
     print(jar)
     pick=jar[randint(0,n-1)]
     print(pick)
+    if pick==jar[randint(0,n-1)]:
+        picktotal+=1
 
 
