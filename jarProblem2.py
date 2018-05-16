@@ -22,7 +22,7 @@ print('Prob of picked color',pickprob)
 '''
 
 
-for i in range(0,1):
+for i in range(0,1000):
     red=randint(0,n)
     total+=1
     jar=[]
@@ -30,9 +30,9 @@ for i in range(0,1):
         jar.append('r')
     for k in range(0,n-red):
         jar.append('g')
-    print(jar)
+    #print(jar)
     pick=jar[randint(0,n-1)]
-    print(pick)
+    #print(pick)
     if pick==jar[randint(0,n-1)]:
         picktotal+=1
 
