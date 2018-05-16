@@ -36,4 +36,4 @@ for i in range(0,1):
     if pick==jar[randint(0,n-1)]:
         picktotal+=1
 
-
+print(picktotal/total)
