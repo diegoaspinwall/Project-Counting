@@ -11,7 +11,7 @@ n=20
 
 total=0
 picktotal=0
-
+'''
 #IF THE CHOICES ARE THE SAME, DIFF RANDOGUESSS
 #Strat4
 
@@ -86,7 +86,7 @@ for i in range(0,10000):
     if jar[randint(0,n-1)]==guess:
         picktotal+=1
 print(picktotal/total)
-'''
+
 
 print('R/S =', (w-5)*(1-(picktotal/total))+(-5)*(picktotal/total))
 #change -5 sometime?
