@@ -32,5 +32,6 @@ for i in range(0,1):
         jar.append('g')
     print(jar)
     pick=jar[randint(0,n-1)]
+    print(pick)
 
 
