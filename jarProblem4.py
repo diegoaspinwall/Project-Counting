@@ -41,7 +41,7 @@ pickprob=picktotal/total
 print('Prob of picked color',pickprob)
 '''
 
-for i in range(0,1000):
+for i in range(0,10000):
     red=randint(0,n)
     total+=1
     jar=[]
