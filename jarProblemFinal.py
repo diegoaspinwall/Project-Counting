@@ -69,14 +69,17 @@ for i in range(0,repeated):
             pick.append('r')
         else:
             pick.append('g')
+        #picks and replaces two marbles, then stores it in pick
     if pick[0]==pick[1]:
         guess=pick[0]
+        #if the first two picks are the same color, the guess is that same color
     else:
         rando = randint(0,n-1)
         if jar[rando]=='r':
             guess='r'
         else:
             guess='g'
+        #if the first two picks are different colors, picks another one and makes it the guess color
     if jar[randint(0,n-1)]==guess:
         twopicktotal+=1
 
