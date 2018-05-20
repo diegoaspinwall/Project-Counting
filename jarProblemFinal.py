@@ -27,9 +27,16 @@ twototal=0
 picktotal=0
 
 for i in range(0,repeated):
-    color=randint(0,n-1)+1
-    twototal+=n
-    picktotal+=color
+    red=randint(0,n)
+    twototal+=1
+    jar=[]
+    for j in range(0,red):
+        jar.append('r')
+    for k in range(0,n-red):
+        jar.append('g')
+    pick=jar[randint(0,n-1)]
+    if pick==jar[randint(0,n-1)]:
+        picktotal+=1
 
 pickprob=picktotal/twototal
 print('Prob yes color strategy 3 =',pickprob)
