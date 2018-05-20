@@ -61,6 +61,7 @@ for i in range(0,repeated):
         jar.append('r')
     for k in range(0,n-red):
         jar.append('g')
+    #creates and fills a jar
     pick=[]
     for b in range(1,3):
         rando = randint(0,n-1)
