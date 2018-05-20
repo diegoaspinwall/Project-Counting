@@ -82,6 +82,7 @@ for i in range(0,repeated):
         #if the first two picks are different colors, picks another one and makes it the guess color
     if jar[randint(0,n-1)]==guess:
         twopicktotal+=1
+    #if the guess is the same as the marble pick in the game, picktotal is increased by 1
 
 twopickprob=twopicktotal/threetotal
 print('Prob of yes color strategy 4 =',twopickprob)
@@ -97,12 +98,14 @@ for i in range(0,repeated):
     fourtotal+=1
     jar=[]
     unchangedjar=[]
+    #this jar is for the game. it will not be changed and is the same as jar
     for j in range(0,red):
         jar.append('r')
         unchangedjar.append('r')
     for k in range(0,n-red):
         jar.append('g')
         unchangedjar.append('g')
+    #sets up the jar
     pick=[]
     for b in range(1,3):
         rando = randint(0,n-b)
