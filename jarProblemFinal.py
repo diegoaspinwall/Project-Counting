@@ -8,6 +8,8 @@ w=10
 n=20
 repeated=3000
 
+#the different totals and picktotals (onetotal, twototal...) are just so python doesn't get confused
+
 #Strat1/2
 onetotal=0
 redtotal=0
@@ -19,6 +21,7 @@ for i in range(0,repeated):
 
 oneprob=redtotal/onetotal
 D= oneprob*(-1)*w
+#see the document for explanation of above
 print('Probability red/green strategy 1 or 2 =', oneprob)
 print('D =', D)
 
@@ -30,13 +33,17 @@ for i in range(0,repeated):
     red=randint(0,n)
     twototal+=1
     jar=[]
+    #makes a jar
     for j in range(0,red):
         jar.append('r')
     for k in range(0,n-red):
         jar.append('g')
+    #fills it with random arrangement of red and green
     pick=jar[randint(0,n-1)]
+    #chooses random marble
     if pick==jar[randint(0,n-1)]:
         picktotal+=1
+    #chooses again, if both are same adds one to the picktotal
 
 pickprob=picktotal/twototal
 print('Prob yes color strategy 3 =',pickprob)
