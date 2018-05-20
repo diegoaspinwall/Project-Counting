@@ -109,15 +109,19 @@ for i in range(0,repeated):
     pick=[]
     for b in range(1,3):
         rando = randint(0,n-b)
+        #happens twice, the second time a marble is subtracted
         if jar[rando]=='r':
             pick.append('r')
         else:
             pick.append('g')
+        #adds colors to pick
         jar.remove(jar[rando])
+        #removes the marble that was picked from the jar
     if pick[0]==pick[1]:
         guess=pick[0]
         if unchangedjar[randint(0,n-1)]==guess:
             threepicktotal+=1
+        #two of the same color
     else:
         rando = randint(0,n-3)
         if jar[rando]=='r':
@@ -126,8 +130,10 @@ for i in range(0,repeated):
         else:
             jar.remove(jar[rando])
             guess='g'
+        #two of different colors, makes the third the guess
         if unchangedjar[randint(0,n-1)]==guess:
             threepicktotal+=1
+        #goes back to the original jar, and takes random; compares to guess
 
 threepickprob=threepicktotal/fourtotal
 print('Prob of yes color strategy 5',threepickprob)
