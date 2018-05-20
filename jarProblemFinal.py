@@ -48,40 +48,29 @@ threetotal=0
 twopicktotal=0
 for i in range(0,repeated):
     red=randint(0,n)
-    threetotal+=n
+    threetotal+=1
     jar=[]
     for j in range(0,red):
         jar.append('r')
     for k in range(0,n-red):
         jar.append('g')
-    count=0
-    picks=[]
-    #print(jar)
+    pick=[]
     for b in range(1,3):
         rando = randint(0,n-1)
         if jar[rando]=='r':
-            count+=1
-        picks.append(rando)
-    if count==0 or count==2:
-        if picks[0]==picks[1]:
-            color=randint(0,n-2)+1
-            twopicktotal+=color
-            #print('Two picks, same one')
+            pick.append('r')
         else:
-            color=randint(0,n-2)+2
-            twopicktotal+=color
-            #print('Two picks, different')
+            pick.append('g')
+    if pick[0]==pick[1]:
+        guess=pick[0]
     else:
         rando = randint(0,n-1)
-        picks.append(rando)
-        if picks[0]==picks[2]:
-            color=randint(0,n-2)+1
-            twopicktotal+=color
-            #print('Three picks, 1st and 3rd same')
+        if jar[rando]=='r':
+            guess='r'
         else:
-            color=randint(0,n-3)+2
-            twopicktotal+=color
-            #print('Three picks, all different')
+            guess='g'
+    if jar[randint(0,n-1)]==guess:
+        twopicktotal+=1
 
 twopickprob=twopicktotal/threetotal
 print('Prob of yes color strategy 4 =',twopickprob)
