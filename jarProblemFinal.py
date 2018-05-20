@@ -119,4 +119,3 @@ threepickprob=threepicktotal/fourtotal
 print('Prob of yes color strategy 5',threepickprob)
 S= (-1)*(w*threepickprob+D)
 print('S =', S)
-
